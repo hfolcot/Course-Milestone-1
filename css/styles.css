@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Rosarivo');
+
+body {
+    font-family: 'Rosarivo', serif;
+    background-color: #D0FCB3;
+}
+
+/********************************************Header*/
+
+
+
+.navbar {
+    background-color: #C8AD55;
+    width: 100vw;
+}
+
+.header-image {}
+
+.navbar-links {
+    padding-top: 150px;
+}
+
+@media (max-width: 767px) {
+    .navbar-links {
+        padding-top: 0px;
+    }
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #271F30;
+    font-size: medium;
+
+}
+
+
+/********************************************Footer*/
+
+.footerbar {
+    background-color: #C8AD55;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
