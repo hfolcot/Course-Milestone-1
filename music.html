@@ -32,7 +32,43 @@
             </div>
         </div>
     </header>
-
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <video controls><source src="videos/TheMonkees.mp4" type="video/mp4">Your browser does not support this video.</video>
+                </div>
+                <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span><i class="fa fa-download"></i>Choose a song to download:</span>
+                </div>
+                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <form onsubmit="this.action = document.getElementById('filename').value">
+                        <div>
+                            <select id="filename">
+                        <option value="audio/Clarksville.mp3">Clarksville</option>
+                        <option value="audio/DaydreamBeliever.mp3">Daydream Believer</option>
+                        <option value="audio/ImABeliever.mp3">I'm a Believer</option>
+                        <option value="audio/SteppingStone.mp3">Stepping Stone</option>
+                        </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Download" class="btn-success" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container-fluid">
             <div class="row">
