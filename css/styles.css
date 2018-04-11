@@ -3,15 +3,15 @@
 body {
     font-family: 'Rosarivo', serif;
     background-color: #D0FCB3;
+    width: 100vw;
 }
 
 /********************************************Header*/
 
-
-
 .navbar {
     background-color: #C8AD55;
     width: 100vw;
+    margin: 0;
 }
 
 .header-image {}
@@ -34,12 +34,160 @@ body {
 }
 
 
+/********************************************Index Main Section*/
+
+.main-section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.picture-slideshow {
+    padding-left: 10%;
+    width: 184px;
+    height: 194px;
+
+
+}
+
+.slideshow-img-1 {
+    position: absolute;
+    z-index: -1;
+    animation-name: picture-slideshow-animation1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+
+}
+
+.slideshow-img-2 {
+    position: absolute;
+    z-index: -1;
+    animation-name: picture-slideshow-animation2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+
+}
+
+.slideshow-img-3 {
+    position: absolute;
+    z-index: -1;
+    animation-name: picture-slideshow-animation3;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+
+}
+
+.slideshow-img-4 {
+    position: absolute;
+    z-index: -1;
+    animation-name: picture-slideshow-animation4;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+
+}
+
+.slideshow-img-5 {
+    position: absolute;
+    z-index: -1;
+    animation-name: picture-slideshow-animation5;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+
+}
+
+.booking-btn {
+    margin: 25px auto;
+}
+
+.btn-primary {
+    background-color: #822E81;
+    border-color: #822E81;
+    color: #F2EFC7;
+}
+
+.home-social-links {
+    font-size: 35px;
+    padding: 20px;
+    color: #474448;
+}
+
+.performance-dates {
+    border: solid;
+    border-color: #474448;
+    border-width: 5px;
+    font-weight: bold;
+}
+
+.performance-dates h4 {
+    font-weight: bold;
+}
+
 /********************************************Footer*/
 
 .footerbar {
     background-color: #C8AD55;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100vw;
+    margin: 0;
+}
+
+/********************************************Keyframes*/
+
+@keyframes picture-slideshow-animation1 {
+
+    0% {
+        z-index: -1;
+    }
+    20% {
+        z-index: 2;
+    }
+}
+
+
+@keyframes picture-slideshow-animation2 {
+
+    20% {
+        z-index: -1;
+    }
+    40% {
+        z-index: 2;
+    }
+}
+
+@keyframes picture-slideshow-animation3 {
+
+    40% {
+        z-index: -1;
+    }
+    60% {
+        z-index: 2;
+    }
+}
+
+@keyframes picture-slideshow-animation4 {
+
+    60% {
+        z-index: -1;
+    }
+    80% {
+        z-index: 2;
+    }
+}
+
+@keyframes picture-slideshow-animation5 {
+
+    80% {
+        z-index: -1;
+    }
+    100% {
+        z-index: 2;
+    }
 }
