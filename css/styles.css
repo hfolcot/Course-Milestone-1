@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Rosarivo');
+@import url('https://fonts.googleapis.com/css?family=Vesper+Libre:700');
 
+html,
 body {
-    font-family: 'Rosarivo', serif;
-    background-color: #F2EFC7;
+    font-family: 'Vesper Libre', serif;
     width: 100%;
+    margin: 0;
 }
 
 /********************************************Header*/
 
 .navbar {
     background-color: #C8AD55;
-    width: 100%;
-    margin: 0;
+    text-align: center;
 }
 
 .header-image {}
@@ -20,16 +20,12 @@ body {
     padding-top: 150px;
 }
 
-@media (max-width: 767px) {
-    .navbar-links {
-        padding-top: 0px;
-    }
-}
+
 
 .navbar-links a {
     text-decoration: none;
     color: #271F30;
-    font-size: medium;
+    font-size: 20px;
 
 }
 
@@ -77,11 +73,24 @@ body {
     border: solid;
     border-color: #474448;
     border-width: 5px;
-    font-weight: bold;
 }
 
-.performance-dates h4 {
-    font-weight: bold;
+/********************************************About Main Section*/
+
+.band-pic {
+    float: left;
+    border-radius: 25%;
+    margin-right: 5px;
+}
+
+.member-info {
+    padding: 25px;
+    border: solid;
+    border-color: #474448;
+    border-radius: 5%;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    max-width: 30%;
 }
 
 /********************************************Footer*/
@@ -91,8 +100,17 @@ body {
     bottom: 0;
     background-color: #C8AD55;
     width: 100%;
-    margin: 0;
+    text-align: center;
+    font-size: 15px;
 }
+
+.footer-links {
+    font-size: 25px;
+    padding: 10px;
+    color: #474448;
+    text-decoration: none;
+}
+
 
 /********************************************Keyframes*/
 
@@ -115,5 +133,25 @@ body {
 
     100% {
         background: url(../images/band.jpg);
+    }
+}
+
+/********************************************Media Queries*/
+
+@media (max-width: 767px) {
+
+    .navbar {
+        min-height: 0px;
+    }
+    .navbar-links {
+        padding-top: 0px;
+    }
+    .footerbar {
+        text-align: left;
+
+    }
+    .footer-links {
+        font-size: 25px;
+        padding: 2px;
     }
 }
