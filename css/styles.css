@@ -3,7 +3,7 @@
 html,
 body {
     font-family: 'Vesper Libre', serif;
-    width: 100%;
+    width: 100vw;
     margin: 0;
 }
 
@@ -90,8 +90,52 @@ body {
     border-radius: 5%;
     margin-left: 25px;
     margin-bottom: 25px;
-    max-width: 30%;
 }
+
+/********************************************Music Main Section*/
+
+.music-titles {
+    margin: 25px auto;
+}
+
+.music-page {
+    text-align: center;
+}
+
+
+.music-selection i {
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.music-selection h3 {
+    display: inline;
+}
+
+.music-video {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+
+.music-selection-dropdown {
+    width: 200px;
+    font-size: 20px;
+}
+
+.play-btn-wrapper {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.play-btn {
+    width: 100px;
+    font-size: 20px;
+}
+
+
+/********************************************Contact Main Section*/
 
 /********************************************Footer*/
 
@@ -138,7 +182,7 @@ body {
 
 /********************************************Media Queries*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .navbar {
         min-height: 0px;
@@ -154,4 +198,18 @@ body {
         font-size: 25px;
         padding: 2px;
     }
+    .member-info {
+        margin: 0;
+    }
+    
+    .music-video {
+        margin-left: 0;
+    }
+
+    .music-video video {
+        height: auto;
+        width: 100%;
+            }
+
+
 }
