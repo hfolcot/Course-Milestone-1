@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre:700');
 
-html,
+
 body {
     font-family: 'Vesper Libre', serif;
     width: 100vw;
@@ -29,6 +29,34 @@ body {
 
 }
 
+/********************************************Buttons*/
+
+.btn-primary {
+    background-color: #822E81;
+    border-color: #822E81;
+    color: #F2EFC7;
+}
+
+.booking-btn {
+    margin: 25px auto;
+}
+
+
+.play-btn-wrapper {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.play-btn {
+    width: 100px;
+    font-size: 20px;
+}
+
+.contact-btn {
+    padding-top: 10px;
+    text-align: center;
+
+}
 
 /********************************************Index Main Section*/
 
@@ -51,16 +79,6 @@ body {
 }
 
 
-
-.booking-btn {
-    margin: 25px auto;
-}
-
-.btn-primary {
-    background-color: #822E81;
-    border-color: #822E81;
-    color: #F2EFC7;
-}
 
 .home-social-links {
     margin: 25px;
@@ -124,18 +142,31 @@ body {
     font-size: 20px;
 }
 
-.play-btn-wrapper {
-    padding-top: 10px;
-    padding-bottom: 100px;
-}
-
-.play-btn {
-    width: 100px;
-    font-size: 20px;
-}
 
 
 /********************************************Contact Main Section*/
+
+.contact-form {
+    margin: 0 auto;
+    max-width: 40%;
+    padding-bottom: 50px;
+}
+
+
+
+#contact-heading {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#contact-text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
 
 /********************************************Footer*/
 
@@ -201,7 +232,7 @@ body {
     .member-info {
         margin: 0;
     }
-    
+
     .music-video {
         margin-left: 0;
     }
@@ -209,7 +240,9 @@ body {
     .music-video video {
         height: auto;
         width: 100%;
-            }
-
+    }
+    .contact-form {
+        max-width: 80%;
+    }
 
 }

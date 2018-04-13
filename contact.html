@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid navbar">
+    <header class="container-fluid navbar">
             <div class="row">
                 <div class="hidden-xs col-sm-4 header-image">
                     <a href="index.html"><img src="images/cover2.png" alt="The Monkees"></a>
@@ -31,13 +30,11 @@
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
-        </div>
     </header>
-    <section>
-        <div class="container-fluid">
+    <section class="container-fluid">
             <div class="row">
-                <p id="contact-form-heading">We are available to perform at private functions!</p>
-                <p id="contact-form-text">If you wish to make an enquiry please fill out the form below and we will get in touch.</p>
+                <p id="contact-heading">We are available to perform at private functions!</p>
+                <p id="contact-text">If you wish to make an enquiry please fill out the form below and we will get in touch.</p>
                 <div class="contact-form">
                     <form action="" method="post">
                         <label for="name">Name: </label><input type="text" name="name" placeholder="Your Full Name" class="form-control" required/>
@@ -45,14 +42,12 @@
                         <label for="phone">Telephone: </label><input type="tel" id="phone" name="phone" placeholder="Telephone Number" class="form-control" required/>
                         <label for="date">Date of Event: </label><input type="date" id="date" name="date" class="form-control" />
                         <label for="comments">Comments/Questions: </label><textarea type="text" id="comments" name="comments" placeholder="1000 characters max" rows="5" maxlength="1000" class="form-control"></textarea>
-                        <input type="submit" value="Submit" class="btn btn-success" />
+                        <div class="contact-btn"><input type="submit" value="Submit" class="btn-primary"/></div>
                     </form>
                 </div>
             </div>
-        </div>
     </section>
-    <footer>
-        <div class="container-fluid footerbar">
+    <footer class="container-fluid footerbar">
             <div class="row">
                 <div class="col-xs-6 col-sm-4">
                     <p class="hidden-xs">Find us on social media:</p>
@@ -67,7 +62,6 @@
                     <p class="hidden-xs">Book us for an event:</p><a href="contact.html" class="footer-links"><i class="fa fa-envelope"></i></a>
                 </div>
             </div>
-        </div>
     </footer>
 
 </body>

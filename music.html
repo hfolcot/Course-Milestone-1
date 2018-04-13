@@ -12,84 +12,78 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid navbar">
-            <div class="row">
-                <div class="hidden-xs col-sm-4 header-image">
-                    <a href="index.html"><img src="images/cover2.png" alt="The Monkees"></a>
-                </div>
-                <div class="col-xs-6 col-sm-2 navbar-links">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="col-xs-6 col-sm-2 navbar-links">
-                    <a href="about.html">About</a>
-                </div>
-                <div class="col-xs-6 col-sm-2 navbar-links">
-                    <a href="music.html">Music</a>
-                </div>
-                <div class="col-xs-6 col-sm-2 navbar-links">
-                    <a href="contact.html">Contact</a>
-                </div>
+    <header class="container-fluid navbar">
+        <div class="row">
+            <div class="hidden-xs col-sm-4 header-image">
+                <a href="index.html"><img src="images/cover2.png" alt="The Monkees"></a>
+            </div>
+            <div class="col-xs-6 col-sm-2 navbar-links">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="col-xs-6 col-sm-2 navbar-links">
+                <a href="about.html">About</a>
+            </div>
+            <div class="col-xs-6 col-sm-2 navbar-links">
+                <a href="music.html">Music</a>
+            </div>
+            <div class="col-xs-6 col-sm-2 navbar-links">
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </header>
-    <section>
-        <div class="container-fluid music-page">
-            <div class="row music-selection">
-                <div class="col-xs-12 music-titles">
-                    <h3>Watch The Monkees perform "Daydream Believer"</h3>
-                </div>
+    <section class="container-fluid music-page">
+        <div class="row music-selection">
+            <div class="col-xs-12 music-titles">
+                <h3>Watch The Monkees perform "Daydream Believer"</h3>
             </div>
+        </div>
 
-            <div class="row music-video">
-                <div class="col-xs-12">
-                    <video controls><source src="videos/TheMonkees.mp4" type="video/mp4">Your browser does not support this video.</video>
-                </div>
+        <div class="row music-video">
+            <div class="col-xs-12">
+                <video controls><source src="videos/TheMonkees.mp4" type="video/mp4">Your browser does not support this video.</video>
             </div>
-            <div class="row music-selection">
-                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
-                <div class="col-xs-12 music-titles">
-                    <span><i class="fa fa-music"></i><h3>Or choose a song to listen to:</h3></span>
-                </div>
-                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+        <div class="row music-selection">
+            <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-12 music-titles">
+                <span><i class="fa fa-music"></i><h3>Or choose a song to listen to:</h3></span>
             </div>
+            <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
 
-            <div class="row music-selection">
-                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <form onsubmit="this.action = document.getElementById('filename').value" target="_blank">
-                        <div>
-                            <select id="filename" class="music-selection-dropdown">
+        <div class="row music-selection">
+            <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <form onsubmit="this.action = document.getElementById('filename').value" target="_blank">
+                    <div>
+                        <select id="filename" class="music-selection-dropdown">
                         <option value="audio/Clarksville.mp3">Clarksville</option>
                         <option value="audio/DaydreamBeliever.mp3">Daydream Believer</option>
                         <option value="audio/ImABeliever.mp3">I'm a Believer</option>
                         <option value="audio/SteppingStone.mp3">Stepping Stone</option>
                         </select>
-                        </div>
-                        <div class="play-btn-wrapper">
-                            <input type="submit" value="Play" class="btn-primary play-btn" />
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
+                    </div>
+                    <div class="play-btn-wrapper">
+                        <input type="submit" value="Play" class="btn-primary play-btn" />
+                    </div>
+                </form>
             </div>
+            <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4"></div>
         </div>
     </section>
-    <footer>
-        <div class="container-fluid footerbar">
-            <div class="row">
-                <div class="col-xs-6 col-sm-4">
-                    <p class="hidden-xs">Find us on social media:</p>
-                    <a target="_blank" href="#" class="footer-links"><i class="fa fa-twitter-square"></i></a>
-                    <a target="_blank" href="#" class="footer-links"><i class="fa fa-youtube-square"></i></a>
-                    <a target="_blank" href="#" class="footer-links"><i class="fa fa-facebook-square"></i></a>
-                </div>
-                <div class="col-xs-3 col-sm-4">
-                    <p class="hidden-xs">Check out some of our music:</p><a href="music.html" class="footer-links"><i class="fa fa-music"></i></a>
-                </div>
-                <div class="col-xs-3 col-sm-4">
-                    <p class="hidden-xs">Book us for an event:</p><a href="contact.html" class="footer-links"><i class="fa fa-envelope"></i></a>
-                </div>
+    <footer class="container-fluid footerbar">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">
+                <p class="hidden-xs">Find us on social media:</p>
+                <a target="_blank" href="#" class="footer-links"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="#" class="footer-links"><i class="fa fa-youtube-square"></i></a>
+                <a target="_blank" href="#" class="footer-links"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="col-xs-3 col-sm-4">
+                <p class="hidden-xs">Check out some of our music:</p><a href="music.html" class="footer-links"><i class="fa fa-music"></i></a>
+            </div>
+            <div class="col-xs-3 col-sm-4">
+                <p class="hidden-xs">Book us for an event:</p><a href="contact.html" class="footer-links"><i class="fa fa-envelope"></i></a>
             </div>
         </div>
     </footer>
