@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-.header-image {}
+
 
 .navbar-links {
     padding-top: 150px;
@@ -104,7 +104,7 @@ body {
 
 
 .home-social-links {
-    margin: 25px;
+    margin: 20px;
     font-size: 35px;
     color: #5DA271;
 }
@@ -127,20 +127,29 @@ body {
 
 /********************************************About Main Section*/
 
-.band-pic {
-    float: left;
-    border-radius: 25%;
-    margin-right: 5px;
+.band-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.member-info {
-    padding: 25px;
+.band-pic {
+    float: right;
+    border-radius: 25%;
+    margin: 10px;
+
+}
+
+.band-member {
     border: solid;
     border-color: #595F72;
     border-radius: 5%;
-    margin-left: 25px;
-    margin-bottom: 25px;
+    border-width: 1px;
+    margin: 10px;
+
 }
+
+
 
 /********************************************Music Main Section*/
 
@@ -210,6 +219,7 @@ body {
     text-align: center;
     font-size: 15px;
     color: #E3E3E3;
+    margin-top: 25px;
 }
 
 .footer-links {
@@ -353,9 +363,7 @@ body {
     .navbar {
         min-height: 0px;
     }
-    .navbar-links {
-        padding-top: 0px;
-    }
+
     .footerbar {
         text-align: left;
 
@@ -363,9 +371,6 @@ body {
     .footer-links {
         font-size: 25px;
         padding: 2px;
-    }
-    .member-info {
-        margin: 0;
     }
 
     .music-video {
@@ -380,4 +385,19 @@ body {
         max-width: 80%;
     }
 
+
+
+}
+
+@media (max-width: 767px) {
+    .navbar-links {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .band-container {
+        max-width: 50%;
+        padding: 0;
+    }
 }
