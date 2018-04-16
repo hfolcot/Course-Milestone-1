@@ -5,12 +5,14 @@ body {
     font-family: 'Vesper Libre', serif;
     width: 100vw;
     margin: 0;
+    background-color: #FFFCF2;
+    color: #595F72;
 }
 
 /********************************************Header*/
 
 .navbar {
-    background-color: #C8AD55;
+    background-color: #898989;
     text-align: center;
 }
 
@@ -24,14 +26,14 @@ body {
 
 .navbar-links a {
     text-decoration: none;
-    color: #271F30;
+    color: #E3E3E3;
     font-size: 20px;
     text-transform: uppercase;
 
 }
 
 .navbar-links a:hover {
-    color: #813405;
+    color: #595F72;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -41,14 +43,14 @@ body {
 /********************************************Buttons*/
 
 .btn-primary {
-    background-color: #822E81;
-    border-color: #822E81;
-    color: #F2EFC7;
+    background-color: #5DA271;
+    border-color: #5DA271;
+    color: #E3E3E3;
 }
 
 .btn-primary:hover {
-    background-color: #813405;
-    border-color: #813405;
+    background-color: #595F72;
+    border-color: #595F72;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -90,7 +92,7 @@ body {
     width: 180px;
     border: solid;
     border-width: 5px;
-    border-color: #474448;
+    border-color: #595F72;
     animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
     -webkit-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
     -moz-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
@@ -104,12 +106,12 @@ body {
 .home-social-links {
     margin: 25px;
     font-size: 35px;
-    color: #474448;
+    color: #5DA271;
 }
 
 
 .home-social-links:hover {
-    color: #813405;
+    color: #595F72;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -119,7 +121,7 @@ body {
 
 .performance-dates {
     border: solid;
-    border-color: #474448;
+    border-color: #595F72;
     border-width: 5px;
 }
 
@@ -134,7 +136,7 @@ body {
 .member-info {
     padding: 25px;
     border: solid;
-    border-color: #474448;
+    border-color: #595F72;
     border-radius: 5%;
     margin-left: 25px;
     margin-bottom: 25px;
@@ -203,21 +205,22 @@ body {
 .footerbar {
     position: relative;
     bottom: 0;
-    background-color: #C8AD55;
+    background-color: #898989;
     width: 100%;
     text-align: center;
     font-size: 15px;
+    color: #E3E3E3;
 }
 
 .footer-links {
     font-size: 25px;
     padding: 10px;
-    color: #474448;
+    color: #E3E3E3;
     text-decoration: none;
 }
 
 .footer-links:hover {
-    color: #813405;
+    color: #595F72;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
