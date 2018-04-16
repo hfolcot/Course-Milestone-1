@@ -26,7 +26,16 @@ body {
     text-decoration: none;
     color: #271F30;
     font-size: 20px;
+    text-transform: uppercase;
 
+}
+
+.navbar-links a:hover {
+    color: #813405;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
 }
 
 /********************************************Buttons*/
@@ -35,6 +44,15 @@ body {
     background-color: #822E81;
     border-color: #822E81;
     color: #F2EFC7;
+}
+
+.btn-primary:hover {
+    background-color: #813405;
+    border-color: #813405;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
 }
 
 .booking-btn {
@@ -74,6 +92,9 @@ body {
     border-width: 5px;
     border-color: #474448;
     animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
+    -webkit-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
+    -moz-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
+    -o-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
 
 
 }
@@ -84,6 +105,15 @@ body {
     margin: 25px;
     font-size: 35px;
     color: #474448;
+}
+
+
+.home-social-links:hover {
+    color: #813405;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
 }
 
 
@@ -186,29 +216,131 @@ body {
     text-decoration: none;
 }
 
+.footer-links:hover {
+    color: #813405;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+
+}
 
 /********************************************Keyframes*/
 
 @keyframes slideshow {
-    0% {
-        background: url(../images/band.jpg);
-    }
-    20% {
-        background: url(../images/dj.jpg);
-    }
-    40% {
-        background: url(../images/mn.jpg);
-    }
-    60% {
-        background: url(../images/md.jpg);
-    }
-    80% {
-        background: url(../images/pt.jpg);
-    }
-
+    0%,
     100% {
         background: url(../images/band.jpg);
     }
+    12% {
+        background: url(../images/album.jpg);
+    }
+    24% {
+        background: url(../images/dj.jpg);
+    }
+    36% {
+        background: url(../images/album2.jpg);
+    }
+    48% {
+        background: url(../images/mn.jpg);
+    }
+    60% {
+        background: url(../images/cover.jpg);
+    }
+    72% {
+        background: url(../images/md.jpg);
+    }
+    84% {
+        background: url(../images/pt.jpg);
+    }
+
+}
+
+@-webkit-keyframes slideshow {
+    0%,
+    100% {
+        background: url(../images/band.jpg);
+    }
+    12% {
+        background: url(../images/album.jpg);
+    }
+    24% {
+        background: url(../images/dj.jpg);
+    }
+    36% {
+        background: url(../images/album2.jpg);
+    }
+    48% {
+        background: url(../images/mn.jpg);
+    }
+    60% {
+        background: url(../images/cover.jpg);
+    }
+    72% {
+        background: url(../images/md.jpg);
+    }
+    84% {
+        background: url(../images/pt.jpg);
+    }
+
+}
+
+@-moz-keyframes slideshow {
+    0%,
+    100% {
+        background: url(../images/band.jpg);
+    }
+    12% {
+        background: url(../images/album.jpg);
+    }
+    24% {
+        background: url(../images/dj.jpg);
+    }
+    36% {
+        background: url(../images/album2.jpg);
+    }
+    48% {
+        background: url(../images/mn.jpg);
+    }
+    60% {
+        background: url(../images/cover.jpg);
+    }
+    72% {
+        background: url(../images/md.jpg);
+    }
+    84% {
+        background: url(../images/pt.jpg);
+    }
+
+}
+
+@-o-keyframes slideshow {
+    0%,
+    100% {
+        background: url(../images/band.jpg);
+    }
+    12% {
+        background: url(../images/album.jpg);
+    }
+    24% {
+        background: url(../images/dj.jpg);
+    }
+    36% {
+        background: url(../images/album2.jpg);
+    }
+    48% {
+        background: url(../images/mn.jpg);
+    }
+    60% {
+        background: url(../images/cover.jpg);
+    }
+    72% {
+        background: url(../images/md.jpg);
+    }
+    84% {
+        background: url(../images/pt.jpg);
+    }
+
 }
 
 /********************************************Media Queries*/
