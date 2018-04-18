@@ -156,7 +156,9 @@ body {
     border-color: #595F72;
     border-radius: 5%;
     border-width: 1px;
-    margin: 10px;
+    min-height: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 
@@ -407,6 +409,12 @@ body {
 @media (max-width: 767px) {
     .navbar-links {
         padding-top: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .band-member {
+        min-height: auto;
     }
 }
 
