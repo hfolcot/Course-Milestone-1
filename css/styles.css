@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre:700');
 
 
-body {
+html, body {
     font-family: 'Vesper Libre', serif;
-    width: 100vw;
-    margin: 0;
     background-color: #FFFCF2;
     color: #595F72;
+
+    
 }
 
 /********************************************Header*/
@@ -89,6 +89,7 @@ body {
 .main-section {
     margin: 50px 0px;
     text-align: center;
+    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
 .picture-slideshow {
@@ -140,8 +141,7 @@ body {
 
 .band-container {
     max-width: 80%;
-    margin: 0 auto;
-    padding: 10px;
+    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
 .band-pic {
@@ -165,6 +165,10 @@ body {
 
 
 /********************************************Music Main Section*/
+
+.music-page {
+    min-height:calc(100vh - 263px);
+}
 
 .music-titles {
     margin: 25px auto;
@@ -199,6 +203,10 @@ body {
 
 /********************************************Contact Main Section*/
 
+.contact-container {
+    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
+}
+
 .contact-form {
     margin: 0 auto;
     max-width: 40%;
@@ -224,15 +232,12 @@ body {
 /********************************************Footer*/
 
 .footerbar {
-    position: relative;
-    bottom: 0;
     background-color: #898989;
-    width: 100%;
     text-align: center;
     font-size: 15px;
     color: #E3E3E3;
-    margin-top: 25px;
     padding-top: 5px;
+
 }
 
 .footer-links {
@@ -260,28 +265,28 @@ body {
 @keyframes slideshow {
     0%,
     100% {
-        background: url(../images/band.jpg);
+        background: url("../images/band.jpg");
     }
     12% {
-        background: url(../images/album.jpg);
+        background: url("../images/album.jpg");
     }
     24% {
-        background: url(../images/dj.jpg);
+        background: url("../images/dj.jpg");
     }
     36% {
-        background: url(../images/album2.jpg);
+        background: url("../images/album2.jpg");
     }
     48% {
-        background: url(../images/mn.jpg);
+        background: url("../images/mn.jpg");
     }
     60% {
-        background: url(../images/cover.jpg);
+        background: url("../images/cover.jpg");
     }
     72% {
-        background: url(../images/md.jpg);
+        background: url("../images/md.jpg");
     }
     84% {
-        background: url(../images/pt.jpg);
+        background: url("../images/pt.jpg");
     }
 
 }
@@ -289,28 +294,28 @@ body {
 @-webkit-keyframes slideshow {
     0%,
     100% {
-        background: url(../images/band.jpg);
+        background: url("../images/band.jpg");
     }
     12% {
-        background: url(../images/album.jpg);
+        background: url("../images/album.jpg");
     }
     24% {
-        background: url(../images/dj.jpg);
+        background: url("../images/dj.jpg");
     }
     36% {
-        background: url(../images/album2.jpg);
+        background: url("../images/album2.jpg");
     }
     48% {
-        background: url(../images/mn.jpg);
+        background: url("../images/mn.jpg");
     }
     60% {
-        background: url(../images/cover.jpg);
+        background: url("../images/cover.jpg");
     }
     72% {
-        background: url(../images/md.jpg);
+        background: url("../images/md.jpg");
     }
     84% {
-        background: url(../images/pt.jpg);
+        background: url("../images/pt.jpg");
     }
 
 }
@@ -318,28 +323,28 @@ body {
 @-moz-keyframes slideshow {
     0%,
     100% {
-        background: url(../images/band.jpg);
+        background: url("../images/band.jpg");
     }
     12% {
-        background: url(../images/album.jpg);
+        background: url("../images/album.jpg");
     }
     24% {
-        background: url(../images/dj.jpg);
+        background: url("../images/dj.jpg");
     }
     36% {
-        background: url(../images/album2.jpg);
+        background: url("../images/album2.jpg");
     }
     48% {
-        background: url(../images/mn.jpg);
+        background: url("../images/mn.jpg");
     }
     60% {
-        background: url(../images/cover.jpg);
+        background: url("../images/cover.jpg");
     }
     72% {
-        background: url(../images/md.jpg);
+        background: url("../images/md.jpg");
     }
     84% {
-        background: url(../images/pt.jpg);
+        background: url("../images/pt.jpg");
     }
 
 }
@@ -347,28 +352,28 @@ body {
 @-o-keyframes slideshow {
     0%,
     100% {
-        background: url(../images/band.jpg);
+        background: url("../images/band.jpg");
     }
     12% {
-        background: url(../images/album.jpg);
+        background: url("../images/album.jpg");
     }
     24% {
-        background: url(../images/dj.jpg);
+        background: url("../images/dj.jpg");
     }
     36% {
-        background: url(../images/album2.jpg);
+        background: url("../images/album2.jpg");
     }
     48% {
-        background: url(../images/mn.jpg);
+        background: url("../images/mn.jpg");
     }
     60% {
-        background: url(../images/cover.jpg);
+        background: url("../images/cover.jpg");
     }
     72% {
-        background: url(../images/md.jpg);
+        background: url("../images/md.jpg");
     }
     84% {
-        background: url(../images/pt.jpg);
+        background: url("../images/pt.jpg");
     }
 
 }
