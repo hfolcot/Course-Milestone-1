@@ -98,15 +98,15 @@ X = Functioning as expected
 
 Browser/Test | Opera | Firefox | Chrome | Edge | Safari
 -----|-----|-----|-----|-----|-----
-Display|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|
-Slideshow|X|X|X|Does not work|
-Contact form|X|X|X|X|
-All links|X|X|X|X|
-:hover functions|X|X|X|X|
-Video|X|X|X|X|
-Dropdown Box|X|X|X|X|
-Play button|X|Goes to expected page but error stating supported format not found|X|Goes to expected page but states that audio files isn't supported|
-Submit button|X|X|X|X|
+Display|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|X
+Slideshow|X|X|X|Does not work|X
+Contact form|X|X|X|X|X
+All links|X|X|X|X|X
+:hover functions|X|X|X|X|X
+Video|X|X|X|X|X
+Dropdown Box|X|X|X|X|X
+Play button|X|Goes to expected page but error stating supported format not found|X|Goes to expected page but states that audio files isn't supported|Goes to expected page but states that audio files isn't supported
+Submit button|X|X|X|X|405 not allowed error
 
 
 #### Using Chrome's dev tools to test each page is displaying correcty at different screen widths
