@@ -87,7 +87,6 @@ html, body {
 /********************************************Index Main Section*/
 
 .main-section {
-    margin: 50px 0px;
     text-align: center;
     min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }

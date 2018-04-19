@@ -94,7 +94,9 @@ The form uses the Post method but is not currently connected to a back end.
 
 The site was tested on a Safari browser on a Macbook by another user who found it easy to use and navigate, and that all functions behaved as expected.
 
-X = Functioning as expected
+I then tested the following:
+
+(X = Functioning as expected)
 
 Browser/Test | Opera | Firefox | Chrome | Edge | Safari
 -----|-----|-----|-----|-----|-----
