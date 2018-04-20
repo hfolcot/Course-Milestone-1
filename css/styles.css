@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre:700');
 
 
-html, body {
+html,
+body {
     font-family: 'Vesper Libre', serif;
     background-color: #FFFCF2;
     color: #595F72;
+    overflow-x: hidden;
 
-    
+
 }
 
 /********************************************Header*/
 
 .navbar {
     background-color: #898989;
-    text-align: center;
+
 }
 
 
@@ -88,26 +90,106 @@ html, body {
 
 .main-section {
     text-align: center;
-    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
+    min-height: calc(100vh - 263px);
+    padding: 0;
+    /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
-.picture-slideshow {
-    margin: 25px auto;
-    background-repeat: no-repeat;
-    height: 190px;
-    width: 180px;
-    border: solid;
-    border-width: 5px;
-    border-color: #595F72;
-    animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
-    -webkit-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
-    -moz-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
-    -o-animation: slideshow 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite normal;
+#sitename {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: bold;
+}
 
+/*sitename is visible only on screens too small to include the site logo*/
+
+.photos-container {
+    height: 317px;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
 
 }
 
+.s-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
 
+}
+
+.slideshow-img-1 {
+    animation: slideshow-step-1 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-1 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-1 50s ease-out infinite normal;
+    -o-animation: slideshow-step-1 50s ease-out infinite normal;
+
+}
+
+.slideshow-img-2 {
+    animation: slideshow-step-2 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-2 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-2 50s ease-out infinite normal;
+    -o-animation: slideshow-step-2 50s ease-out infinite normal;
+}
+
+.slideshow-img-3 {
+    animation: slideshow-step-3 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-3 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-3 50s ease-out infinite normal;
+    -o-animation: slideshow-step-3 50s ease-out infinite normal;
+}
+
+.slideshow-img-4 {
+    animation: slideshow-step-4 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-4 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-4 50s ease-out infinite normal;
+    -o-animation: slideshow-step-4 50s ease-out infinite normal;
+}
+
+.slideshow-img-5 {
+    animation: slideshow-step-5 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-5 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-5 50s ease-out infinite normal;
+    -o-animation: slideshow-step-5 50s ease-out infinite normal;
+}
+
+.slideshow-img-6 {
+    animation: slideshow-step-6 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-6 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-6 50s ease-out infinite normal;
+    -o-animation: slideshow-step-6 50s ease-out infinite normal;
+}
+
+.slideshow-img-7 {
+    animation: slideshow-step-7 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-7 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-7 50s ease-out infinite normal;
+    -o-animation: slideshow-step-7 50s ease-out infinite normal;
+}
+
+.slideshow-img-8 {
+    animation: slideshow-step-8 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-8 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-8 50s ease-out infinite normal;
+    -o-animation: slideshow-step-8 50s ease-out infinite normal;
+}
+
+.slideshow-img-9 {
+    animation: slideshow-step-9 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-9 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-9 50s ease-out infinite normal;
+    -o-animation: slideshow-step-9 50s ease-out infinite normal;
+}
+
+.slideshow-img-10 {
+    animation: slideshow-step-10 50s ease-out infinite normal;
+    -webkit-animation: slideshow-step-10 50s ease-out infinite normal;
+    -moz-animation: slideshow-step-10 50s ease-out infinite normal;
+    -o-animation: slideshow-step-10 50s ease-out infinite normal;
+}
 
 .home-social-links {
     margin: 20px;
@@ -134,13 +216,15 @@ html, body {
     border: solid;
     border-color: #595F72;
     border-width: 5px;
+    border-radius: 15px;
 }
 
 /********************************************About Main Section*/
 
 .band-container {
     max-width: 80%;
-    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
+    min-height: calc(100vh - 263px);
+    /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
 .band-pic {
@@ -153,8 +237,8 @@ html, body {
 .band-member {
     border: solid;
     border-color: #595F72;
-    border-radius: 5%;
-    border-width: 1px;
+    border-radius: 15px;
+    border-width: 5px;
     min-height: 170px;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -166,15 +250,12 @@ html, body {
 /********************************************Music Main Section*/
 
 .music-page {
-    min-height:calc(100vh - 263px);
+    min-height: calc(100vh - 263px);
+    text-align: center;
 }
 
 .music-titles {
     margin: 25px auto;
-}
-
-.music-page {
-    text-align: center;
 }
 
 
@@ -183,8 +264,8 @@ html, body {
     padding-right: 20px;
 }
 
-.music-selection h3 {
-    display: inline;
+.music-selection {
+    font-size:25px;
 }
 
 .music-video {
@@ -203,7 +284,8 @@ html, body {
 /********************************************Contact Main Section*/
 
 .contact-container {
-    min-height: calc(100vh - 263px); /*to force the footer to the bottom, vh minus the height of the header and footer*/
+    min-height: calc(100vh - 263px);
+    /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
 .contact-form {
@@ -218,12 +300,12 @@ html, body {
     text-align: center;
     margin-top: 50px;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 40px;
 }
 
 #contact-text {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 25px;
 }
 
 
@@ -261,128 +343,570 @@ html, body {
 
 /********************************************Keyframes*/
 
-@keyframes slideshow {
-    0%,
+@keyframes slideshow-step-1 {
+    0% {
+        opacity: 1;
+
+    }
+
+    10% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+
+    }
     100% {
-        background: url("../images/band.jpg");
+        opacity: 1;
     }
-    12% {
-        background: url("../images/album.jpg");
+}
+
+@-webkit-keyframes slideshow-step-1 {
+    0% {
+        opacity: 1;
+
     }
-    24% {
-        background: url("../images/dj.jpg");
+
+    10% {
+        opacity: 0;
     }
-    36% {
-        background: url("../images/album2.jpg");
+    90% {
+        opacity: 0;
+
     }
-    48% {
-        background: url("../images/mn.jpg");
+    100% {
+        opacity: 1;
     }
-    60% {
-        background: url("../images/cover.jpg");
+}
+
+@-moz-keyframes slideshow-step-1 {
+    0% {
+        opacity: 1;
+
     }
-    72% {
-        background: url("../images/md.jpg");
+
+    10% {
+        opacity: 0;
     }
-    84% {
-        background: url("../images/pt.jpg");
+    90% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideshow-step-1 {
+    0% {
+        opacity: 1;
+
+    }
+
+    10% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideshow-step-2 {
+
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
     }
 
 }
 
-@-webkit-keyframes slideshow {
-    0%,
-    100% {
-        background: url("../images/band.jpg");
+@-webkit-keyframes slideshow-step-2 {
+
+    0% {
+        opacity: 0;
     }
-    12% {
-        background: url("../images/album.jpg");
+    10% {
+        opacity: 1;
     }
-    24% {
-        background: url("../images/dj.jpg");
-    }
-    36% {
-        background: url("../images/album2.jpg");
-    }
-    48% {
-        background: url("../images/mn.jpg");
-    }
-    60% {
-        background: url("../images/cover.jpg");
-    }
-    72% {
-        background: url("../images/md.jpg");
-    }
-    84% {
-        background: url("../images/pt.jpg");
+    20% {
+        opacity: 0;
     }
 
 }
 
-@-moz-keyframes slideshow {
-    0%,
-    100% {
-        background: url("../images/band.jpg");
+@-moz-keyframes slideshow-step-2 {
+
+    0% {
+        opacity: 0;
     }
-    12% {
-        background: url("../images/album.jpg");
+    10% {
+        opacity: 1;
     }
-    24% {
-        background: url("../images/dj.jpg");
+    20% {
+        opacity: 0;
     }
-    36% {
-        background: url("../images/album2.jpg");
+
+}
+@-o-keyframes slideshow-step-2 {
+
+    0% {
+        opacity: 0;
     }
-    48% {
-        background: url("../images/mn.jpg");
+    10% {
+        opacity: 1;
     }
-    60% {
-        background: url("../images/cover.jpg");
-    }
-    72% {
-        background: url("../images/md.jpg");
-    }
-    84% {
-        background: url("../images/pt.jpg");
+    20% {
+        opacity: 0;
     }
 
 }
 
-@-o-keyframes slideshow {
-    0%,
-    100% {
-        background: url("../images/band.jpg");
+@keyframes slideshow-step-3 {
+
+    10% {
+        opacity: 0;
     }
-    12% {
-        background: url("../images/album.jpg");
+    20% {
+        opacity: 1;
     }
-    24% {
-        background: url("../images/dj.jpg");
+    30% {
+        opacity: 0;
     }
-    36% {
-        background: url("../images/album2.jpg");
+}
+
+@-webkit-keyframes slideshow-step-3 {
+
+    10% {
+        opacity: 0;
     }
-    48% {
-        background: url("../images/mn.jpg");
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-3 {
+
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-3 {
+
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideshow-step-4 {
+
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideshow-step-4 {
+
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-4 {
+
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-4 {
+
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideshow-step-5 {
+
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideshow-step-5 {
+
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-5 {
+
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-5 {
+
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideshow-step-6 {
+
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
     }
     60% {
-        background: url("../images/cover.jpg");
+        opacity: 0;
     }
-    72% {
-        background: url("../images/md.jpg");
+}
+
+@-webkit-keyframes slideshow-step-6 {
+
+    40% {
+        opacity: 0;
     }
-    84% {
-        background: url("../images/pt.jpg");
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-6 {
+
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-6 {
+
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideshow-step-7 {
+
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideshow-step-7 {
+
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-7 {
+
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-7 {
+
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideshow-step-8 {
+
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideshow-step-8 {
+
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-8 {
+
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-8 {
+
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideshow-step-9 {
+
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideshow-step-9 {
+
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes slideshow-step-9 {
+
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes slideshow-step-9 {
+
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideshow-step-10 {
+
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 
 }
+
+@-webkit-keyframes slideshow-step-10 {
+
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+@-moz-keyframes slideshow-step-10 {
+
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+@-o-keyframes slideshow-step-10 {
+
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
 
 /********************************************Media Queries*/
 
 @media (max-width: 768px) {
 
     .navbar {
-        min-height: 0px;
+        text-align: center;
     }
 
     .footerbar {
@@ -414,13 +938,17 @@ html, body {
     .navbar-links {
         padding-top: 0px;
     }
+
+    .main-section,
+    .band-container,
+    .contact-container,
+    .music-page {
+        min-height: calc(100vh - 98px);
+    }
+    /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
 
-@media (max-width: 992px) {
-    .band-member {
-        min-height: auto;
-    }
-}
+
 
 @media (min-width: 1540px) {
     .band-container {
