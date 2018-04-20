@@ -33,6 +33,8 @@ The site uses the Vesper Libre font from Google Fonts.
 
 My own further styling has been done within css/styles.css
 
+The colour scheme was created using https://coolors.co. The entire site only uses five colours outside of the images. These are: #fffcf2 #595f72 #e3e3e3 #898989 and #5da271.
+
 ### Header and Footer
 
 The Bootstrap grid system was utilised for the grids making up the header and footer. 
@@ -41,19 +43,19 @@ The header contains one of the supplied images which is being used as a logo. Cl
 
 The links in both header and footer have been amended so that they transition to a darker colour when they are hovered over.
 
-The header is designed to compress into two rows of two links each with no logo and no padding at less than 768px width.
+The header is designed to compress into two rows of two links each with no logo and no padding at less than 768px width. The logo is replaced by the band's name beneath the header on all pages so the site's purpose can still be easily identified by the user.
 
 The footer will show only icons and no text at less than 768px width, to prevent cluttering of a smaller screen. 
 
 ### index.html
 
-The main feature of the Home page is the showcase of pictures which are offered as a type of slideshow. This was achieved using a keyframes animation with multiple steps, each step being one picture. These keyframes have been repeated in styles.css to allow for functionality within different browsers.
+The main feature of the Home page is the showcase of pictures which are offered as a type of slideshow. This was achieved using keyframes animations with multiple steps, each step being one picture. These keyframes have been repeated with prefixes in styles.css to allow for functionality within different browsers. In an earlier version the keyframes code was much simpler and relied on changing the background of a div every few seconds. However, on testing I discovered this was not compatible with Microsoft Edge/Internet Explorer and so it has been rewritten. Each image now has its own keyframe meaning that the code in styles.css is much longer. Ultimately an animation like this would be much more efficiently produced using JavaScript, however in this instance I wanted to use pure CSS as using JS would have required an external source writing the code for me.
 
 The page should also draw the user's attention to the ability to book the band with a button (Book Us) under the picture slideshow. This button will take the user directly to contact.html. It has made use of the bootstrap styling (btn btn-primary) but with a change of colour to fit in with the colour scheme and draw the user's attention.
 
 Next we have a basic bordered div containing details of the band's next public performance dates.
 
-And finally there are social media icons which take the user to an external website in a separate browser tab.
+And finally there are social media icons which take the user to the relevant external websites in a separate browser tab.
 
 ### about.html
 
@@ -63,7 +65,7 @@ On a screen smaller than 992px, each band member will be displayed one per row. 
 
 ### music.html
 
-This is the page where the band are able to showcase their music in the form of a video and four audio files. (NB the audio files were downloaded from the CI provided github source but do not appear to work; other students have acknowledged that this was the same for them) 
+This is the page where the band are able to showcase their music in the form of a video and four audio files.  
 
 The video uses html5 video controls and has a message in place for when this function is not supported. "Your browser does not support this video".
 
@@ -101,7 +103,7 @@ I then tested the following:
 Browser/Test | Opera | Firefox | Chrome | Edge | Safari
 -----|-----|-----|-----|-----|-----
 Display|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|About page has large gap below footer. All other pages OK|X
-Slideshow|X|X|X|Does not work|X
+Slideshow|X|X|X|Does not work|X|
 Contact form|X|X|X|X|X
 All links|X|X|X|X|X
 :hover functions|X|X|X|X|X
@@ -111,7 +113,7 @@ Play button|X|Goes to expected page but error stating supported format not found
 Submit button|X|X|X|X|405 not allowed error
 
 
-#### Using Chrome's dev tools to test each page is displaying correcty at different screen widths
+#### Using Chrome's dev tools to test each page is displaying correctly at different screen widths
 
 Screen width/Page display|Galaxy S5|Pixel 2|Pixel 2XL|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|iPad Pro
 -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
@@ -119,3 +121,39 @@ index.html|X|X|Large gap below footer|X|X|X|Large gap below footer|Large gap bel
 about.html|X|X|X|X|X|X|X|Large gap below footer|Page is only half the vh
 music.html|X|Small gap below footer|Large gap below footer|X|X|Large gap below footer|Large gap below footer|X|Page is only half the vh
 contact.html|X|X|X|X|X|X|X|X|Page is only half the vh
+
+
+## Testing (Round 2)
+
+I have resolved the issues presented in the first round of testing.
+
+I have also run all pages and the stylesheet through the W3C validators and they are free of errors except one for the contact form as the action is blank. This is an expected result as the form is not connected.
+
+(X = Functioning as expected)
+
+Browser/Test | Opera | Firefox | Chrome | Edge | Safari
+-----|-----|-----|-----|-----|-----
+Display|X|X|X|X|X
+Slideshow|X|X|X|X|X|
+Contact form|X|X|X|X|X
+All links|X|X|X|X|X|
+:hover functions|X|X|X|X|X
+Video|X|X|X|X|X
+Dropdown Box|X|X|X|X|X
+Play button|X|X|X|X|X
+Submit button|X|X|X|X|X
+
+
+#### Using Chrome's dev tools to test each page is displaying correctly at different screen widths (Portrait and Landscape modes have both been tested)
+
+Screen width/Page display|Galaxy S5|Pixel 2|Pixel 2XL|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|iPad Pro
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----
+index.html|X|X|X|X|X|X|X|X|X
+about.html|X|X|X|X|X|X|X|X|X
+music.html|X|X|X|X|X|X|X|X|X
+contact.html|X|X|X|X|X|X|X|X|X
+
+
+The project has been written in cloud9 and committed to git at each stage of functionality.
+
+The site is now live at https://hfolcot.github.io.
