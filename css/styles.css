@@ -265,7 +265,7 @@ body {
 }
 
 .music-selection {
-    font-size:25px;
+    font-size: 25px;
 }
 
 .music-video {
@@ -457,6 +457,7 @@ body {
     }
 
 }
+
 @-o-keyframes slideshow-step-2 {
 
     0% {
@@ -909,10 +910,7 @@ body {
         text-align: center;
     }
 
-    .footerbar {
-        text-align: left;
 
-    }
     .footer-links {
         font-size: 25px;
         padding: 2px;
@@ -946,6 +944,11 @@ body {
         min-height: calc(100vh - 98px);
     }
     /*to force the footer to the bottom, vh minus the height of the header and footer*/
+    .footerbar {
+        text-align: left;
+
+    }
+
 }
 
 
