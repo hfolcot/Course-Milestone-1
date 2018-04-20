@@ -42,6 +42,21 @@ body {
     -o-transition: all 0.25s ease-in-out;
 }
 
+.sitename-holder {
+    text-align: center;
+}
+
+
+#sitename {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: bold;
+}
+
+/*sitename is visible only on screens too small to include the site logo*/
+
+
 /********************************************Buttons*/
 
 .btn-primary {
@@ -94,15 +109,6 @@ body {
     padding: 0;
     /*to force the footer to the bottom, vh minus the height of the header and footer*/
 }
-
-#sitename {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 12px;
-    font-weight: bold;
-}
-
-/*sitename is visible only on screens too small to include the site logo*/
 
 .photos-container {
     height: 317px;
