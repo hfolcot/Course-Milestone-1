@@ -6,9 +6,13 @@ body {
     font-family: 'Vesper Libre', serif;
     background-color: #FFFCF2;
     color: #595F72;
-    overflow-x: hidden;
 
 
+}
+
+.no-padding {
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 /********************************************Header*/
@@ -55,7 +59,6 @@ body {
 }
 
 /*sitename is visible only on screens too small to include the site logo*/
-
 
 /********************************************Buttons*/
 
